@@ -54,7 +54,7 @@ anomalies.to_csv('submission.csv')
 ```
 If the anomaly score more towards the negative its a outlier.
 
-all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](www.google.com).
+all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](https://market.oceanprotocol.com/asset/did:op:a848ce4806833402651429ab4c6ea79aa940458fbfa26a5bb1c52e0ce600ffc1).
 
 ![This is an image](images/anomaly_score.png)
 
