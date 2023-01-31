@@ -50,5 +50,8 @@ highest_anomaly = anomalies.loc[highest_index]
 #print the highest anomaly score and the corresponding data
 print("highest anomaly score:",highest_anomaly["anomaly_score"])
 print("highest anomaly data:",highest_anomaly)
-anomalies.to_csv('submissio.csv')
+anomalies.to_csv('submission.csv')
 ```
+If the anomaly score more towards the negative its a outlier.
+
+all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](www.google.com)
