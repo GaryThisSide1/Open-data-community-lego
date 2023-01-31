@@ -54,4 +54,7 @@ anomalies.to_csv('submission.csv')
 ```
 If the anomaly score more towards the negative its a outlier.
 
-all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](www.google.com)
+all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](www.google.com).
+
+
+This code can be very easily modified to take a address of a person as a input and tell which anomaly score it has to decide if the address is a part of a sybil attack 
