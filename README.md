@@ -11,3 +11,44 @@ There are several libraries in Python that can be used to apply anomaly detectio
 - Tensorflow: a library that can be used to create and train neural network models, including autoencoders which can be used for anomaly detection.
 
 I used the scikit-learn to implement this lego by using its algorithm Localoutlierfactor.
+
+Anomaly scores are a way to quantify how likely a given data point is to be an anomaly. These scores are typically assigned by an anomaly detection algorithm, and are used to identify data points that deviate from the norm or exhibit unusual behavior.
+
+In the example I provided earlier, the LocalOutlierFactor algorithm assigns a negative outlier factor score to each data point, with higher scores indicating a higher likelihood of being an anomaly. The scores are based on the density of the data points in the feature space, and take into account the number of neighboring data points and the distance to the nearest neighbors. Data points with the highest anomaly scores are considered to be the most unusual or deviating from the norm.
+
+Here is the code i wrote for it :-
+
+```
+from sklearn.neighbors import LocalOutlierFactor
+import pandas as pd
+
+# Load your data into a pandas dataframe
+data = pd.read_csv("your_data.csv")
+
+# Define the features you want to use for anomaly detection
+X = data[["feature_1", "feature_2", "feature_3"]]
+
+# Create an instance of the LocalOutlierFactor class
+lof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)
+
+# Fit the model to your data
+lof.fit(X)
+
+# Use the decision_function method to assign a score to each data point
+scores = lof.negative_outlier_factor_
+
+# Create a column in your dataframe to store the scores
+data["anomaly_score"] = scores
+
+# Identify the data points with the highest anomaly scores
+anomalies = data[data["anomaly_score"] < -1]
+# highest_score = round(anomalies["anomaly_score"].max(), 2)
+# print(highest_score)
+highest_index = round(anomalies["anomaly_score"].idxmax(),2)
+highest_anomaly = anomalies.loc[highest_index]
+
+#print the highest anomaly score and the corresponding data
+print("highest anomaly score:",highest_anomaly["anomaly_score"])
+print("highest anomaly data:",highest_anomaly)
+anomalies.to_csv('submissio.csv')
+```
