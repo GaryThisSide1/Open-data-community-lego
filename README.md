@@ -56,11 +56,12 @@ If the anomaly score more towards the negative its a outlier.
 
 all the address in the climate_grant_votes which had the anomaly score less than -1 i uploaded them to the ocean protocol [here](www.google.com).
 
-![This is an image](images/anomaly_score.svg)
+![This is an image](images/anomaly_score.png)
 
 this is a graph showing the anomaly score which are less than -1
 
 
 
 
-This code can be very easily modified to take a address of a person as a input and tell which anomaly score it has to decide if the address is a part of a sybil attack 
+This code can be very easily modified to take a address of a person as a input and tell which anomaly score it has to decide if the address is a part of a sybil attack.
+The code of the climate grant votes is in the core in the file LOF.py
