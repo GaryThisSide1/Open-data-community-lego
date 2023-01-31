@@ -1,5 +1,7 @@
 # Open-data-community-lego
-I uploaded the climate grant vote output on applying the lego on ocean protocol [here](https://market.oceanprotocol.com/asset/did:op:a848ce4806833402651429ab4c6ea79aa940458fbfa26a5bb1c52e0ce600ffc1)
+I uploaded the climate grant vote output on applying the lego on ocean protocol [here](https://market.oceanprotocol.com/asset/did:op:a848ce4806833402651429ab4c6ea79aa940458fbfa26a5bb1c52e0ce600ffc1).
+
+
 I used the anomly detection algorithm for the unsupervised learning because Unsupervised learning algorithms do not require labeled data, which makes them useful in situations where labeled data is scarce or expensive to acquire. These algorithms can be used to discover patterns and structure in the data, such as grouping similar data points together or identifying outliers.
 
 Anomaly detection algorithms, which are a type of unsupervised learning, are often used to detect sybil attacks. These algorithms can identify patterns or behaviors in the data that deviate from the norm, which can indicate the presence of a sybil attack.
